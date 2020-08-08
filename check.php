@@ -19,7 +19,6 @@ $year=htmlspecialchars($_SESSION['join']['year'],ENT_QUOTES);
 $month=htmlspecialchars($_SESSION['join']['month'],ENT_QUOTES);
 $day=htmlspecialchars($_SESSION['join']['day'],ENT_QUOTES);
 
-$i=3; //変更点
 
 
 if(!empty($_POST)){
