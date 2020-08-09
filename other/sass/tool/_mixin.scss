@@ -1,0 +1,20 @@
+/*
+#mixins
+サイト全体で使うmixinを指定
+*/
+/*
+#icon
+アイコン画像を円で表示
+*/
+@mixin icon($length:150px){
+  display: inline-block;
+    background-color: #ccc;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    width: $length;
+    height: $length;
+    border: 1px solid #ccc;
+    background-size: cover;
+    border-radius: 50%;
+}

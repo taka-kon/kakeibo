@@ -1,0 +1,61 @@
+.button{
+  background-color:rgb(211, 211, 211);
+  
+  font-weight: bolder;
+  margin:10px;
+  color:#fff;
+  white-space: nowrap;
+  // ホバー時に0.3秒で透明度が変化（全てのブラウザに対応）
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  
+
+  // 新規登録画面上のボタン
+  &--rewrite{
+    background-color:rgb(155, 218, 248);
+    padding:10px 30px;
+    font-size:1.1rem;
+  }
+  &--register{
+    background-color:rgb(47, 19, 19);
+    padding:10px 30px;
+    font-size:1.1rem;
+  }
+  &--login{
+    background-color:rgb(216, 70, 13);
+    padding:10px 20px;
+    font-size:1.3rem;
+  }
+  &--logout{
+    background-color:rgb(255, 181, 85);
+    padding:10px 20px;
+    font-size:1.1rem;
+    margin-top:300px;
+  }
+  &--post{
+    background-color:rgb(27, 52, 196);
+    padding:10px;
+    font-size:1.1rem;
+    border-radius:5px;
+  }
+  &--delete{
+    background-color:rgb(122, 26, 26);
+    padding:5px;
+    border-radius: 5px;
+  }
+  @media screen and(max-width:767px) {
+    &--logout{
+      padding:5px 10px;
+      font-size:0.8rem;
+      margin-top:300px;
+    }
+  }
+
+  &:hover{
+    opacity:0.9;
+  }
+  
+}

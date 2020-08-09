@@ -1,0 +1,136 @@
+// マイページのレイアウト
+.main-index{
+  padding:50px 50px;
+    max-width:1000px;
+    width:90%;
+    margin:30px auto;
+    box-shadow: 5px 5px 10px;
+    background-color:#fff;
+    font-size:1.1rem;
+    text-align: center;
+
+    &__icon{
+      @include icon(200px);
+    }
+
+    &__top-expense{
+      border:dotted 5px #000;
+      margin:20px 0px;
+      padding:20px 0;
+    }
+
+    &__top-text1{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    &__name{
+      font-size:3.0rem;
+      margin:0 5px;
+      color: rgb(0, 182, 45);
+    }
+
+    &__top-text2{
+      text-align:center;
+      font-size:1.2rem;
+      margin-bottom:10px;
+    }
+    &__price{
+      font-size:3.0rem;
+      margin-right:5px;
+    }
+    &__head{
+      text-align: left;
+      margin : 20px 0;
+    }
+
+    //フォーム
+    &__form{
+      text-align: center;
+      background-color:#eee;
+      padding:20px 10px;
+    }
+    //フォームの見出し
+    &__form-label{
+      font-size:1.4rem;
+    }
+    //フォームの見出し(最初を除く)
+    &__form-label:nth-of-type(n+2){
+      margin-top:10px;
+    }
+    //折れ線グラフのタブ全体
+    &__tabwrap{
+      margin:20px 0;
+    }
+    &__tabarea{
+      margin:0 10px;
+    }
+    &__tabarea label{
+      width:150px; 
+      margin:0 5px; 
+      display:inline-block; 
+      padding:12px 0; 
+      color:#999; 
+      background:rgb(8, 114, 40); 
+      text-align:center; 
+      font-size:13px; 
+      cursor:pointer; 
+      transition:ease 0.2s opacity;
+    }
+    &__tabarea label:hover{
+      opacity:0.5;
+    }
+    
+    &__tab-panel{
+      display:none;
+    }
+    &__tabarea label.active{
+      background:#fff; 
+      color:#000;
+    }
+    &__tab-panel.active{
+      display:block;
+    }
+
+    //円グラフ
+    &_piegraph{
+      
+      margin:300px;
+    }
+
+    //折れ線グラフ
+    &__graphs{
+      margin:0 auto;
+      max-width:800px;
+      // display:flex;
+    }
+    &__graph{
+      background-color:rgb(255, 254, 217);
+      margin-bottom:10px;
+    }
+    //セレクトフォーム
+    &__select{
+      border:solid 1px #ddd;
+      padding:10px;
+      background-color:#fff;
+    }
+    //テキストフォーム
+    &__text{
+      border:solid 1px #ddd;
+      background-color:#fff;
+    }
+    //取り消しボタン
+    &__button-delete{
+      margin:10px 0 20px 0;
+      text-align:right;
+    }
+    //更新メッセージ全体
+    &__posts{
+      margin-top:30px;
+      font-size:1.0rem;
+      text-align: left;
+    }
+
+
+  }
+  
+ 

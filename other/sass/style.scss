@@ -1,0 +1,18 @@
+//setting
+@import "setting/_color.scss";
+@import "setting/_font.scss";
+
+//tool
+@import "tool/_mixin.scss";
+
+// base
+@import "base/_ress.scss";
+@import "base/_base.scss";
+
+//block
+@import "block/_header.scss";
+@import "block/_main-input.scss"; //ログイン、新規登録の入力欄が含まれるブロック
+@import "block/_main-index.scss"; //マイページのメインブロック
+@import "block/_button.scss";
+@import "block/_g-item.scss"; //グラフの項目
+

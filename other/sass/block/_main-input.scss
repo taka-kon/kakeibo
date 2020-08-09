@@ -1,0 +1,40 @@
+//ログイン、新規登録、確認ページのレイアウト
+.main-input{
+  padding:50px 50px;
+    text-align:center;
+    max-width:500px;
+    width:100%;
+    margin:30px auto;
+    box-shadow: 5px 5px 10px;
+    border-radius:30px;
+    background-color: #fff;
+    font-size:1.1rem;
+
+    &__title{
+      font-size:1.6rem;
+      margin-bottom:20px;
+    }
+  &__headline{
+    font-size:1.2rem;
+    margin-bottom:10px;
+  }
+  &__form{
+    border:solid 1px #ddd;
+    padding:5px;
+    margin-bottom:10px;
+    font-size:1.1rem;
+  }
+  &__tag-dd{
+    margin-bottom:10px;
+  }
+  &__select{
+    border:solid 1px #ddd;
+    margin-right:5px;
+    padding:10px;
+
+  }
+  //アイコン画像確認
+  &__check-image{
+    @include icon();
+  }
+}

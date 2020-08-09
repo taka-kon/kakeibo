@@ -1,0 +1,47 @@
+
+body{
+  font-size:62.5%;
+  font-family:$font-main;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  pointer-events:none;
+}
+
+
+.bg-index{
+  background-image: url("../img/sea-5314717_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg-input{
+  background-image: url("../img/waterfall-5310785_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bg-else{
+  background-image: url("../img/white-flowers-5316486_1920.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+.error{
+  color:$font-error;
+  font-size:0.8rem;
+}
+
+a{
+  text-decoration:none;
+}

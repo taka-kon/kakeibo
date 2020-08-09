@@ -1,0 +1,46 @@
+//グラフの項目
+.g-item{
+  
+  &__parts{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+  &__box{
+    margin       : auto;
+  width        : 15px;
+  height       : 15px;
+  display:inline-block;
+}
+//合計
+  &__box--all{
+    background-color   : $all;
+    display:inline-block;
+  }
+//食費
+  &__box--0{
+    background-color   : $syokuhi;
+    display:inline-block;
+  }
+  //日用品費
+  &__box--1{
+    background-color   : $nitiyouhin;
+    display:inline-block;
+  }
+  //レジャー費
+  &__box--2{
+    background-color   : $reja;
+  }
+  //交通費
+  &__box--3{
+    background-color   : $kotu;
+  }
+  //固定費
+  &__box--4{
+    background-color   : $kotei;
+  }
+  //その他
+  &__box--5{
+    background-color   : $other;
+  }
+}
