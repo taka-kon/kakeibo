@@ -100,16 +100,17 @@ $posts=$posts_get->fetchAll();
   <p class="error">* 未入力があります。</p>
   <?php endif;?>
 
-  <!-- $user['icon']に'-'が含まれているか
-  '-'が含まれているとき・・・アイコン画像を登録
-  含まれていない・・・画像をアップしていない
--->
-  <?php if(strpos($user['icon'],'-')===false):?>
-  
-  <img class="main-index__icon" src="./other/mem_pic/<?php echo 'noImage.png'?>" alt="">
-  <?php else:?>
-    <img class="main-index__icon" src="./other/mem_pic/<?php echo $user['icon'];?>" alt="">
-  <?php endif;?>
+
+    <!-- $user['icon']に'-'が含まれているか
+    '-'が含まれているとき・・・アイコン画像を登録
+    含まれていない・・・画像をアップしていない
+  -->
+    <?php if(strpos($user['icon'],'-')===false):?>
+    
+    <img class="main-index__icon" src="./other/mem_pic/<?php echo 'noImage.png'?>" alt="">
+    <?php else:?>
+      <img class="main-index__icon" src="./other/mem_pic/<?php echo $user['icon'];?>" alt="">
+    <?php endif;?>
 
     <h2 class="main-index__top-text1"><span class="main-index__name"><?php print(htmlspecialchars($user['name'],ENT_QUOTES)); ?></span></h2>
     <div class="main-index__top-expense">
@@ -228,7 +229,7 @@ $posts=$posts_get->fetchAll();
     <div class="main-index__graphs">
       
     
-      <h2 class="main-index__top-text1">3か月</h2>
+      <h2 class="main-index__head">3か月</h2>
       <canvas id="graph-area-3m" class="main-index__graph"></canvas> 
       <div class="main-index__g-item">
         <div class="g-item">
@@ -243,7 +244,7 @@ $posts=$posts_get->fetchAll();
           </ul>
         </div>
       </div>
-      <h2 class="main-index__top-text1">6か月</h2>
+      <h2 class="main-index__head">6か月</h2>
       <canvas id="graph-area-6m" class="main-index__graph"></canvas> 
       <div class="main-index__g-item">
         <div class="g-item">
@@ -270,6 +271,7 @@ $posts=$posts_get->fetchAll();
     
     <!-- 以下、更新情報 -->
     <div class="main-index__posts">
+      <h2 class="main-index__head">更新履歴</h2>
     
     <!-- 出費を入力した場合と残高を増やした場合を考える-->
     <?php foreach($posts as $post):?>
